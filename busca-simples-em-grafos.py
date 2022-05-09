@@ -13,14 +13,8 @@ def visitar(v):
 
 n = input("Entre com o número de vértices: ")
 n = int(n)
-mat = [[0] * n for i in range(n)]
+#mat = [[0] * n for i in range(n)]
 
-"""
-for i in range(n):
-        print("inserir linha", i, "da matriz:")
-        vet = input().split(' ')
-        linha = [int(valor) for valor in vet]
-        mat[i] = linha """
 
 # mat = [[0, 1, 0, 0, 1], [1, 0, 1, 0, 0], [0, 1, 0, 1, 0], [0, 0, 1, 0, 1], [1, 0, 0, 1, 0]]
 
@@ -32,6 +26,11 @@ mat = [
     [0, 0, 0, 1, 0],
 ]
 
+for i in range(n):
+    print("inserir linha", i, "da matriz:")
+    vet = input().split(" ")
+    linha = [int(valor) for valor in vet]
+    mat[i] = linha
 
 marca = n * [0]
 t = 0
